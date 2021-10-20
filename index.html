@@ -1,12 +1,378 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="bg-dark">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Profile</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>BarberShop Liliba</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <link href="style.css" rel="stylesheet" />
   </head>
   <body>
-    <h1>Test</h1>
+    <div class="container">
+      <div class="row">
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+          <div class="container-fluid">
+            <a href="#" class="navbar-brand" href="#"
+              ><img src="img/logo.png" alt=""
+            /></a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarResponsive"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Galery</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#navGalery">Service</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#navTeam">Team</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#navJam">Jam Kerja</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#navAlamat">Alamat</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="#navConnect">Connect</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <!--- Image Slider -->
+      <div id="slides" class="carousel slide" data-ride="carousel">
+        <ul class="carousel-indicators">
+          <li data-target="#slides" data-slide-to="0" class="active"></li>
+          <li data-target="#slides" data-slide-to="1"></li>
+          <li data-target="#slides" data-slide-to="2"></li>
+          <li data-target="#slides" data-slide-to="3"></li>
+        </ul>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/background.png" />
+            <div class="carousel-caption d-none d-md-block">
+              <h3>Where Men and Boys Want To Look Their Very Best</h3>
+              <p>Datang ke king barbershop</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/background2.png" alt="" />
+          </div>
+          <div class="carousel-item">
+            <img src="img/background3.png" alt="" />
+          </div>
+          <div class="carousel-item">
+            <img src="img/background4.png" alt="" />
+          </div>
+        </div>
+
+        <!--Controls-->
+        <a
+          class="carousel-control-prev"
+          href="#slides"
+          role="button"
+          data-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a
+          class="carousel-control-next"
+          href="#slides"
+          role="button"
+          data-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+        <!--/.Controls-->
+      </div>
+
+      <!--- Jumbotron -->
+      <div class="container-fluid">
+        <div class="row jumbotron rounded">
+          <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-10">
+            <p
+              class="lead"
+              style="color:black; font-family: 'Satisfy', cursive; font-weight: bold; font-size: 2rem;"
+            >
+              Barber Liliba,
+              <span
+                style="color:black; font-family: 'Satisfy', cursive; font-weight: bold; font-size: 1rem;"
+              >
+                Art of Barber, (operating since 2016).
+              </span>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!--- Welcome Section -->
+      <div class="container-fluid padding" id="navGalery">
+        <div class="row welcome text-center">
+          <div class="col-12">
+            <h1 class="display-4">Service</h1>
+          </div>
+          <hr />
+        </div>
+      </div>
+
+      <!--- Three Column Section -->
+      <div class="container-fluid padding ">
+        <div class="row text-center padding">
+          <div
+            class="col-xs-12 col-sm-6 col-md-4"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+          >
+            <div class="card">
+              <div class="card-header">
+                <h5 class="card-title">
+                  Reguler <span class="badge badge-dark">15K</span>
+                </h5>
+              </div>
+
+              <img
+                class="card-img-top"
+                src="img/paket/reguler.jpeg"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <ul class="list-group text-left">
+                  <li class="list-group-item border-0">Potong Rambut</li>
+                  <li class="list-group-item border-0"><del>Keramas</del></li>
+                  <li class="list-group-item border-0">
+                    <del>Black Mask</del>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-xs-12 col-sm-6 col-md-4"
+            data-aos="fade-up"
+            data-aos-duration="2500"
+          >
+            <div class="card">
+              <div class="card-header">
+                <h5 class="card-title">
+                  Silver <span class="badge badge-dark">20K</span>
+                </h5>
+              </div>
+
+              <img
+                class="card-img-top"
+                src="img/paket/silver.jpeg"
+                alt="Card image cap"
+              />
+
+              <div class="card-body">
+                <ul class="list-group text-left">
+                  <li class="list-group-item border-0">Potong Rambut</li>
+                  <li class="list-group-item border-0">Keramas</li>
+                  <li class="list-group-item border-0">
+                    <del>Black Mask</del>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-sm-12 col-sm-6 col-md-4"
+            data-aos="fade-up"
+            data-aos-duration="3000"
+          >
+            <div class="card">
+              <div class="card-header">
+                <h5 class="card-title">
+                  Gold <span class="badge badge-dark">25K</span>
+                </h5>
+              </div>
+
+              <img
+                class="card-img-top"
+                src="img/paket/gold.jpg"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <ul class="list-group text-left">
+                  <li class="list-group-item border-0">Potong Rambut</li>
+                  <li class="list-group-item border-0">Keramas</li>
+                  <li class="list-group-item border-0">Black Mask</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr class="my-4" />
+
+      <!--- Meet the team -->
+      <div class="container-fluid padding">
+        <div class="row welcome text-center">
+          <div class="col-12">
+            <h1 class="display-4">Team</h1>
+          </div>
+          <hr />
+        </div>
+      </div>
+
+      <!--- Cards -->
+      <div class="container-fluid padding">
+        <div class="row padding">
+          <div class="col-md-4">
+            <div class="card" data-aos="flip-up" data-aos-duration="2000">
+              <img class="card-img-top" src="img/team1.png" />
+              <div class="card-body">
+                <h4 class="card-title">John Doe</h4>
+                <p class="card-text">
+                  John is an Internet entrepreneur with almost 20 years of
+                  experience.
+                </p>
+                <a href="#" class="btn btn-outline-secondary">See Profile</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card" data-aos="flip-up" data-aos-duration="2500">
+              <img class="card-img-top" src="img/team2.png" />
+              <div class="card-body">
+                <h4 class="card-title">Mary Jo</h4>
+                <p class="card-text">
+                  Mary is a designer with almost 10 years of digital design
+                  experience.
+                </p>
+                <a href="#" class="btn btn-outline-secondary">See Profile</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card" data-aos="flip-up" data-aos-duration="3000">
+              <img class="card-img-top" src="img/team3.png" />
+              <div class="card-body">
+                <h4 class="card-title">Phil Ho</h4>
+                <p class="card-text">
+                  Phil is a developer with over 5 years of web development
+                  experience.
+                </p>
+                <a href="#" class="btn btn-outline-secondary">See Profile</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--- Footer -->
+      <footer class="rounded">
+        <div class="container-fluid padding">
+          <div class="row text-center">
+            <div
+              class="col-md-4"
+              id="navConnect"
+              data-aos="fade-up"
+              data-aos-duration="2000"
+            >
+              <hr class="light" />
+              <h5>Connect</h5>
+              <hr class="light" />
+              <p>
+                <a href="https://wa.me/6282341094001?text=Pesan%20:">
+                  <i class="fab fa-whatsapp"></i> +62-823-4109-4001
+                </a>
+              </p>
+              <p>
+                <a
+                  href="https://web.facebook.com/profile.php?id=100009551830785"
+                  ><i class="fab fa-facebook"></i>Facebook</a
+                >
+              </p>
+              <p>
+                <a href="https://www.instagram.com/kingbarbershopku/"
+                  ><i class="fab fa-instagram"></i>Instagram</a
+                >
+              </p>
+              <p>
+                <a href="#"><i class="fab fa-youtube"></i>Youtube Channel</a>
+              </p>
+            </div>
+
+            <div
+              class="col-md-4"
+              id="navJam"
+              data-aos="fade-up"
+              data-aos-duration="2500"
+            >
+              <hr class="light" />
+              <h5>Jam Kerja</h5>
+              <hr class="light" />
+              <p>Senin-Jumat : 9am-7pm</p>
+              <p>Sabtu : 10am-4pm</p>
+              <p>Minggu/Hari Libur : Tutup</p>
+            </div>
+
+            <div
+              class="col-md-4"
+              id="navAlamat"
+              data-aos="fade-up"
+              data-aos-duration="3000"
+            >
+              <hr class="light" />
+              <h5>Alamat</h5>
+              <hr class="light" />
+              <p>Kupang, Kayu Putih</p>
+              <div class="map-responsive">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1007440.8432609928!2d124.29736818046204!3d-9.481237296642526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2c56849ddf8a93b5%3A0x9bade43349520a36!2sLapangan%20Futsal%20Tana%20Mera!5e0!3m2!1sen!2sid!4v1577604921919!5m2!1sen!2sid"
+                  frameborder="0"
+                  style="border:0"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+
+            <div class="col-12">
+              <hr class="light-100" />
+              <h5>
+                &copy; barberliliba.com, <span>kris.komba@gmail.com</span>
+              </h5>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
   </body>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script>
+    AOS.init();
+  </script>
+
+  <script>
+    $(".navbar-collapse a").click(function() {
+      $(".navbar-collapse").collapse("hide");
+    });
+  </script>
 </html>
